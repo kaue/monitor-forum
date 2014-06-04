@@ -1,0 +1,83 @@
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+ul.links {
+    display: none;
+}
+h4.center {
+    text-align:center;
+}
+a {
+  color: #00B7FF;
+}
+
+a, a:before {
+  transition: all .4s;
+}
+
+div {
+  max-width: 500px;
+  margin: 2em auto;
+}
+
+div:hover a {
+  opacity: .4;
+}
+img.logo {
+    width: 85px;
+    height: 85px;
+    float: right;
+    margin-top: -77px;
+    margin-right: -80px;
+}
+
+a {
+  position: relative;
+  display: block;
+  max-width: 500px;
+  padding: 20px 20px 20px 45px;
+  box-sizing: border-box;
+  color: #777;
+  background: #fAfAfA;
+  text-decoration: none;
+  font-family: "Open Sans", "Segoe UI", Arial, sans-serif;
+}
+
+a:before {
+  content: "";
+  position: absolute;
+  left:0; bottom:0; top:0;
+  width: 20px;
+  background: #7F8C9A;
+}
+
+a:nth-child(even):before {
+  background: #34495E;
+}
+
+a.red:nth-child(even):before {
+  background: #ff4c4c;
+}
+
+a.yellow:nth-child(even):before {
+  background: #f1f442;
+}
+
+a.green:nth-child(even):before {
+  background: #5eff59;
+}
+
+a + a {
+  border-top: 2px solid #ededed;
+}
+div a:hover,
+div a:focus {
+  opacity: 1;
+  padding-left: 55px;
+}
+
+div a:hover:before,
+div a:focus:before {
+  width: 30px;
+}
